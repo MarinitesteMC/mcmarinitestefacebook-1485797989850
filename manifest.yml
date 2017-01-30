@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: mcmarinitestefacebook
+  host: mcmarinitestefacebook
+  disk_quota: 1024M
+  services:
+  - Conversation-facebook
+  env:
+    WORKSPACE_ID: 37e6a390-1388-4950-8891-f31b4bcbb4c5
